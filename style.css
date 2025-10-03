@@ -179,4 +179,41 @@
         transform: translateY(100%);
         opacity: 0;
    }
+
   }
+/* Tambahkan ini di akhir style.css */
+
+/* Style untuk kontainer link */
+#specialLink {
+  animation: fadeIn 1s ease-in-out; /* Animasi muncul halus */
+}
+
+/* Style untuk tombol link */
+.birthday-link button {
+  transition: all 0.3s ease; /* Efek hover halus */
+}
+
+.birthday-link button:hover {
+  background: #45a049; /* Warna lebih gelap saat hover */
+  transform: scale(1.05); /* Sedikit membesar saat hover */
+}
+
+/* Animasi fade-in untuk muncul */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+  .birthday-link button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}
