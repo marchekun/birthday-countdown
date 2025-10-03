@@ -4,15 +4,18 @@ const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
 
 const config = {
-  birthdate: 'Oct 4, 2025',
+  birthdate: 'Oct 2, 2025',
   name: 'Niaaa'
 };
+
+const specialLink = document.getElementById('specialLink'); // Tambahkan ini
 
 function hideEverything() {
   head.style.display = 'none';
   count.style.display = 'none';
   giftbox.style.display = 'none';
   canvasC.style.display = 'none';
+  specialLink.style.display = 'none';
 }
 
 hideEverything();
@@ -489,6 +492,9 @@ x = setInterval(function() {
     function showfireworks() {
       canvasC.style.display = 'initial';
       setTimeout(anim, 1500);
+      setTimeout(() => {
+    specialLink.style.display = 'block'; // Atau 'flex' jika pakai flexbox
+  }, 4000); // Delay 4 detik; sesuaikan jika perlu (misalnya 3000 untuk lebih cepat)
     }
 
     init();
@@ -499,3 +505,4 @@ x = setInterval(function() {
   //     console.log("happy birthday");
   // }
 }, second);
+
